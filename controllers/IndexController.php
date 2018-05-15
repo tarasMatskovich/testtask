@@ -37,7 +37,7 @@ class IndexController extends Controller
                 // вычисление всей нужной информации о пользователе
                 $client  = $_SERVER['HTTP_CLIENT_IP'];
                 $forward = $_SERVER['HTTP_X_FORWARDED_FOR'];
-                $remote  = "92.249.67.7";
+                $remote  = $_SERVER['REMOTE_ADDR'];
                 $country = false;
                 $city = false;
 
